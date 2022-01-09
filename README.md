@@ -1,0 +1,5 @@
+# Subsurface-Machine-Learning-Final-Project
+This repository contains my final project for the PGE 383 Subsurface Machine Learning course taught by Dr. Michael Pyrcz at the University of Texas at Austin.
+
+## Executive Summary
+One method to avoid overfitting models is k-fold cross-validation, which involves splitting the data into k subsets, withholding each subset for testing, training the model using the remaining subsets, and aggregating the relevant metric across all models. The purpose of this project was to examine how the choice of k impacts average test mean squared error (MSE) and variance in test MSE under differing conditions of model complexity and error. Results suggested that average test MSE decreases (non-linearly) as k increases, but variance in test MSE increases (linearly) as k increases, particularly for noiser data. Given that increasing k only marginally decreases average test MSE beyond very low values of k but continues to linearly increase variance in test MSE, I recommend k values in the range of 5-20 to achieve the best balance between average and variance in test MSE.
